@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FB9AD1;
+    color: #86469C;
+}
+
+#app {
+    background:  #FFCDEA;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.task-input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-input-container input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.task-input-container button {
+    padding: 10px;
+    background-color: #86469C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-input-container button:hover {
+    background-color: #6e3c7d;
+}
+
+.task-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: 2px solid #86469C;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.task-id-header,
+.description-header,
+.actions-header {
+    flex: 1;
+    text-align: left;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-item.completed .description {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-item .task-id {
+    margin-right: 10px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.task-item .description {
+    flex: 2;
+}
+
+.task-item .task-actions {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.task-item .task-actions button {
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    background-color: #FF6B6B;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-item .task-actions button:hover {
+    background-color: #d45959;
+}
+
+.task-item .task-actions .edit-task-input {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+#no-tasks-message {
+    color: #86469C;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+}

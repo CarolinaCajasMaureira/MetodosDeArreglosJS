@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1><strong>Control de Tareas</strong></h1>
+        <div class="task-input-container">
+            <input type="text" id="new-task-input" placeholder="Nueva tarea...">
+            <button id="add-task-btn">Agregar</button>
+        </div>
+        <div class="task-summary">
+            <p>Total: <span id="total-tasks">0</span></p>
+            <p>Realizadas: <span id="completed-tasks">0</span></p>
+        </div>
+        <p id="no-tasks-message" class="hidden">No hay tareas pendientes</p>
+        <ul id="task-list" class="task-list"></ul>
+    </div>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
